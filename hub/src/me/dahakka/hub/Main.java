@@ -21,7 +21,7 @@ public class Main
   {
     Log.info(
     
-      new Object[] { "/ HUB Plugin enabled, V: " + getDescription().getVersion() + ", created by: ebarnett." });Bukkit.getServer().getPluginManager().registerEvents(new GUIListener(this), this);getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");BukkitScheduler bs = getServer().getScheduler();bs.scheduleSyncRepeatingTask(this, new InventoryManager(this), 20L, 1L);
+      new Object[] { "/ HUB Plugin enabled, V: " + getDescription().getVersion() + ", created by: dahakka." });Bukkit.getServer().getPluginManager().registerEvents(new GUIListener(this), this);getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");BukkitScheduler bs = getServer().getScheduler();bs.scheduleSyncRepeatingTask(this, new InventoryManager(this), 20L, 1L);
     if (getConfig().get("Prison") == null) {
       getConfig().set("Prison", Boolean.valueOf(false));
     }
@@ -42,7 +42,7 @@ public class Main
   
   public void onDisable()
   {
-    getLogger().info("/ Plugin enabled, V: " + getDescription().getVersion() + ", created by: ebarnett.");
+    getLogger().info("/ Plugin enabled, V: " + getDescription().getVersion() + ", created by: dahakka.");
   }
   
   public boolean onCommand(CommandSender sender, Command cmd, String CommandLabel, String[] args)
